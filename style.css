@@ -43,7 +43,7 @@
   }
   
 
-  .about-box {
+  /* .about-box {
     background-color: #f9fbfc;
     margin: 3rem auto;
     padding: 2rem;
@@ -145,7 +145,7 @@
 
   .projects-box {
     background-color: white;
-    margin: 3rem auto 3rem; /* Combined margin-top and bottom */
+    margin: 3rem auto 3rem; 
     padding: 2rem;
     border-radius: 15px;
     width: 85%;
@@ -176,7 +176,7 @@
   }
   
   .project-grid div a {
-    color: #392b17;          /* Brown link text */
+    color: #392b17;          
     text-decoration: none;  
     display: block;
     width: 100%;
@@ -184,6 +184,6 @@
   }
   
   .project-grid div a:hover {
-    color: #08090b;          /* Darker on hover */
+    color: #08090b;          
     text-decoration: underline;
-  }
+  } */

@@ -45,7 +45,10 @@
 
 
 .navbar .active-link {
-  margin: 4-8px;
-  box-shadow: 0 0 7px rgba(252, 253, 254, 0.8);
-  display:inline-block;
+   margin-right: 7px; 
+  display: inline-block; 
+  padding: 0.1rem 0.3rem;
+  background-color: #EFE1D1;
+  color:rgb(98, 43, 4);
+  border-radius: 3px;
 }

@@ -5,6 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+
+
+  <style>
+   
+  .about-box {
+    background-color: #f9fbfc;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 85%;
+    height:36rem;
+    text-align: center;
+   
+  }
+  
+  .about-box h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-box button {
+    margin-top: 4.0rem;
+    padding: 8px 16px;
+    font-size: 1.5rem; 
+    border: none;
+    background-color: #08090b;
+    color: white;
+    border-radius: 5px;
+  }
+  
+
+  #aboutText{
+    margin-top: 3.0rem;
+    font-size: 20px;
+  }
+
+  
+  </style>
 </head>
 <body>
 <header>
@@ -25,8 +63,8 @@
 
 </header>
 
-
-  <section id="about" class="about-box">
+  <div class="about-box">
+  <section id="about">
     <h2>About Me</h2>
     <button id="showAboutBtn">Show About Info</button>
     <p id="aboutText">
@@ -40,7 +78,22 @@
         that combine creativity, usability, and innovation—and I’m excited about every step that takes me closer to that goal.
     </p>
   </section>
+  </div>
   
-  <script src="about.js"></script>
+  <script>
+    const showBtn = document.getElementById("showAboutBtn");
+    const aboutText = document.getElementById("aboutText");
+
+    showBtn.addEventListener("click", function () {
+      if (aboutText.style.display === "none") {
+        aboutText.style.display = "block";
+        showBtn.textContent = "Hide About Info";
+      } else {
+        aboutText.style.display = "none";
+        showBtn.textContent = "Show About Info";
+      }
+    });
+ 
+  </script>
 </body>
 </html>

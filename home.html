@@ -4,7 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Portfolio</title>
+
+    <style>
+
+      .home-hero-section {
+              
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 5%;
+        min-height: calc(100vh - 80px);
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: left;       
+      }
+
+
+      .hero-text-content {
+          flex: 2; 
+          padding-right: 40px;
+      }
+
+
+      .hero-text-content .main-name {
+          font-size: 4.0rem;
+          color:rgb(37, 2, 2);
+          margin-bottom: 0.5rem;
+      }
+
+
+      .hero-text-content .title-passion {
+          font-size: 2rem;
+          font-weight: 500;
+          color: #090909;
+          margin-bottom: 3rem;
+      }
+
+
+      .hero-text-content .description {
+          font-size: 1.3rem;
+          line-height: 1.6;
+          color: #481e1e;
+          margin-bottom: 2rem;
+      }
+
+
+      .cta-button {
+          background-color: #957e69;
+          color: white;
+          text-decoration: none;
+          padding: 0.8rem 2rem;
+          border-radius: 5px;
+          font-size: 1.1rem;
+          font-weight: bold;
+          cursor: pointer;
+          display: inline-block;
+          transition: background-color 0.3s;
+      }
+
+      .cta-button:hover {
+          background-color: #382c20;
+      }
+
+
+      .hero-image-placeholder {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          margin-left: 3rem;
+      }
+
+      .hero-image-placeholder img {
+          width: 17rem;
+          height: 17rem;
+          border-radius: 50%;
+          object-fit: cover;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+      }
+      
+    </style>
+
+
 </head>
 <body>
     <header>
@@ -25,12 +106,21 @@
 
 </header>
 
-<div id="home" class="homeContent">
-  <h1>Suhana Chauhan</h1>
-  <p>Passionate Frontend Developer</p>
-  <p>Believe in building websites and problem solvin</p>
-  <button>Learn About Me</button>
-</div>
+<main class="home-hero-section">
+
+  <div class="hero-text-content">
+    <h1 class="main-name">Suhana Chauhan</h1>
+    <p class="title-passion">Passionate Frontend Developer</p>
+    <p class="description">Focused on building modern, responsive web applications with clean code. 
+      Driven to solve problems with creativity and efficiency.</p>
+    <a href="about.html" class="cta-button">Learn More About Me</a>
+  </div>
+
+  <div class="hero-image-placeholder">
+    <img  src="photo.jpeg" alt="Suhana Chauhan Profile Photo">
+
+  </div>
+</main>
 
 </body>
 </html>

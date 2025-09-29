@@ -10,35 +10,24 @@
   <style>
    
   .about-box {
-    background-color: #f9fbfc;
-    margin: 3rem auto;
+    background-color: whitesmoke;
+    margin: 5rem auto 3rem auto;
     padding: 2rem;
     border-radius: 15px;
-    width: 85%;
-    height:36rem;
+    max-width: 900px;
+    min-height:40rem;
     text-align: center;
-   
   }
-  
-  .about-box h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .about-box button {
-    margin-top: 4.0rem;
-    padding: 8px 16px;
-    font-size: 1.5rem; 
-    border: none;
-    background-color: #08090b;
-    color: white;
-    border-radius: 5px;
-  }
-  
 
   #aboutText{
-    margin-top: 3.0rem;
-    font-size: 20px;
+    margin : 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:#333;
+    text-align: justify;
+    max-width: 790px;
+    margin: 0 auto;
+    padding: 0 10px;
   }
 
   
@@ -63,37 +52,18 @@
 
 </header>
 
+  <div id="heading">
+     <h2>About Me</h2>
+  </div>
+
   <div class="about-box">
   <section id="about">
-    <h2>About Me</h2>
-    <button id="showAboutBtn">Show About Info</button>
+  
     <p id="aboutText">
-      Suhana Chauhan <br>
-      I’m currently in the learning phase of my journey into web development, focused on building a strong foundation in HTML, CSS, and JavaScript.<br>
-       I'm passionate about technology and the creative process behind building websites, and I’m excited to be learning how to bring ideas to life through<br>
-        responsive and user-friendly web interfaces.While I’m not a professional developer yet, I’m committed to continuous improvement, whether it’s <br>
-        refining my coding skills, understanding best practices, or exploring new tools and frameworks.I believe that working on both strengths and weaknesses <br>
-        is essential for growth, and I actively seek out challenges that help me learn and get better every day.My goal is to eventually contribute 
-        to projects <br>
-        that combine creativity, usability, and innovation—and I’m excited about every step that takes me closer to that goal.
+      I am a motivated learner currently exploring the field of front-end development. I am building my skills in HTML, CSS, and JavaScript, along with practicing responsive design, DOM manipulation, and animations to create interactive user interfaces. I am also learning React.js to develop dynamic, component-based applications and gain experience in building scalable front-end projects. In addition, I am learning Python for problem-solving and data structures, which is strengthening my logic-building and programming foundation. Through projects and continuous practice, I am dedicated to growing into a well-rounded developer who can design user-friendly websites and approach coding challenges with strong analytical skills.
     </p>
   </section>
-  </div>
-  
-  <script>
-    const showBtn = document.getElementById("showAboutBtn");
-    const aboutText = document.getElementById("aboutText");
 
-    showBtn.addEventListener("click", function () {
-      if (aboutText.style.display === "none") {
-        aboutText.style.display = "block";
-        showBtn.textContent = "Hide About Info";
-      } else {
-        aboutText.style.display = "none";
-        showBtn.textContent = "Show About Info";
-      }
-    });
- 
-  </script>
+  </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Skills</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,12 +11,12 @@
 
   .heading{
     text-align:left;
-    padding-top: 5rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
   }
 
   .heading h1{
-    font-size: 3.2rem;
+    font-size: 2.7rem;
     margin-left: 15rem;
     display: inline-block;
     border-bottom: 3px solid #480404;
@@ -24,10 +24,44 @@
   }
 
   .skills-box {
-
-    width: 20rem;
-    background-color: aliceblue;
+    margin-top: 3rem;
   }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0 20px;
+  }
+
+  .skill-card{
+    background-color: whitesmoke;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgbe(0, 0, 0, 0.08);
+    text-align: center;
+    transition: 0.3s, box-shadow 0.3s;
+  }
+
+  .skill-card-hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+
+  .skill-title{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 8px;
+  }
+
+
+  .skill-description{
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+  }
+
 
 </style>
 
@@ -59,45 +93,45 @@
         <div class="skills-grid">
 
           <div class="skill-card">
-            <h3 class="skill-title">Communication</h3>
-            <p class="skill-description">Semantic markup & structure</p>
+            <h3 class="skill-title">HTML</h3>
+            <p class="skill-description">Semantic web structure</p>
           </div>
 
           <div class="skill-card">
-            <h3 class="skill-title">MM</h3>
-            <p class="skill-description">juhuicheiuhdcieudjeocuw</p>
+            <h3 class="skill-title">CSS</h3>
+            <p class="skill-description">Responsive UI styling</p>
           </div>
 
           <div class="skill-card">
-            <h3 class="skill-title">def</h3>
-            <p class="skill-description">duuihuiw uihxuiwhxiuwh</p>
+            <h3 class="skill-title">JavaScript</h3>
+            <p class="skill-description">Dynamic DOM interactivity</p>
           </div>
 
           <div class="skill-card">
-            <h3 class="skill-title">dwdwd</h3>
-            <p skill-description>jhdiuwd duuwhdiuwhiw hiwuhw</p>
+            <h3 class="skill-title">Python Programming</h3>
+            <p skill-description>Solve Algorithmic Problems</p>
           </div>
 
           <div class="skill-card">
-            <h3 class="skill-title">dwdwd</h3>
-            <p skill-description>jhdiuwd duuwhdiuwhiw hiwuhw</p>
+            <h3 class="skill-title">React</h3>
+            <p skill-description>Develop Web Components</p>
           </div>
 
            <div class="skill-card">
-            <h3 class="skill-title">dwdwd</h3>
-            <p skill-description>jhdiuwd duuwhdiuwhiw hiwuhw</p>
+            <h3 class="skill-title">DSA</h3>
+            <p skill-description>Work with Data Structures(loops,arrays,strings,linked lists)</p>
           </div>
 
            <div class="skill-card">
-            <h3 class="skill-title">dwdwd</h3>
-            <p skill-description>jhdiuwd duuwhdiuwhiw hiwuhw</p>
+            <h3 class="skill-title">Git & GitHub</h3>
+            <p skill-description>Manage Code Versions,Track Changes,Organize Projects</p>
           </div>
 
           <div class="skill-card">
-            <h3 class="skill-title">dwdwd</h3>
-            <p skill-description>jhdiuwd duuwhdiuwhiw hiwuhw</p>
+            <h3 class="skill-title">Artificial Intelligence & Machine learning</h3>
+            <p skill-description>Conversational AI Familiarity</p>
           </div>
-
+          
 
         </div>
    

@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Education</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+
+      #heading {
+        text-align: left;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+      }
+
+      #heading h1 {
+        font-size: 2.7rem;
+        margin-left: 15rem; 
+        display: inline-block;
+        border-bottom: 3px solid #191a1b; 
+        padding-bottom: 5px;
+      }
+
+      .education-box {
+        background-color:whitesmoke;
+        margin: 3rem auto 0 auto;
+        padding: 3rem;
+        border-radius: 10px;
+        max-width: 1100px;
+        text-align: left;
+        border-left: 8px solid #6b5744;
+      }
+      
+      .text {
+        line-height: 1.5;
+        text-align: justify;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+       #university{
+        padding-bottom: 1.5rem;
+      }
+
+      #year {
+        padding-bottom: 1.5rem;
+        color:grey;
+      }
+
+      #education {
+        color:#6b5744;
+      }
+
+
+
+    </style>
 </head>
+
 <body>
     <header>
  
@@ -25,9 +76,16 @@
 
 </header>
 
-    <section id="education" class="education-box">
-    
-    <script src="education.js"></script>
-    </section>
+    <div id="heading">
+      <h1>Education</h1>
+    </div>
+
+    <div class="education-box">
+      <h2 id="education" class="text">Bachelor of Computer Applications (B.C.A) Hons. with Research</h2>
+      <h3 id="university" class="text">Eternal University</h3>
+      <h4 id="year" class="text">2024 – 2027 (Expected)</h4>
+      <p id="p" class="text">Currently in 2nd Year, focusing on front-end development, programming, web development, database management, software projects, 
+         and research in emerging computer applications.</p>
+    </div>
 </body>
 </html>

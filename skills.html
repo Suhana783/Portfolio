@@ -4,64 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css"> 
 
  <style>
+    .heading {
+        text-align: left; 
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
 
-  .heading{
-    text-align:left;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-  }
+    .heading h1 {
+        font-size: 2.7rem;
+        margin-left: 15rem; 
+        display: inline-block;
+        border-bottom: 3px solid #191a1b; 
+        padding-bottom: 5px;
+    }
 
-  .heading h1{
-    font-size: 2.7rem;
-    margin-left: 15rem;
-    display: inline-block;
-    border-bottom: 3px solid #480404;
-    padding-bottom: 5px;
-  }
+    .skills-box {
+        margin: 3rem auto 0 auto; 
+        max-width: 1200px;
+    }
 
-  .skills-box {
-    margin-top: 3rem;
-  }
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px; 
+    }
 
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 0 20px;
-  }
+    .skill-card {
+        background-color: white;
+        padding: 40px 25px; 
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); 
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-  .skill-card{
-    background-color: whitesmoke;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgbe(0, 0, 0, 0.08);
-    text-align: center;
-    transition: 0.3s, box-shadow 0.3s;
-  }
+    .skill-card:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        cursor: pointer;
+    }
 
-  .skill-card-hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-  }
+    .skill-title {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #624d3a;
+        margin-bottom: 8px;
+    }
 
-  .skill-title{
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 8px;
-  }
-
-
-  .skill-description{
-    font-size: 0.9rem;
-    color: #555;
-    line-height: 1.4;
-  }
-
+    .skill-description {
+        font-size: 0.9rem;
+        color: #0e0d0d;
+        line-height: 1.4;
+    }
 
 </style>
 
@@ -109,29 +106,33 @@
 
           <div class="skill-card">
             <h3 class="skill-title">Python Programming</h3>
-            <p skill-description>Solve Algorithmic Problems</p>
+            <p class="skill-description">Solve Algorithmic Problems</p>
           </div>
 
           <div class="skill-card">
             <h3 class="skill-title">React</h3>
-            <p skill-description>Develop Web Components</p>
-          </div>
-
-           <div class="skill-card">
-            <h3 class="skill-title">DSA</h3>
-            <p skill-description>Work with Data Structures(loops,arrays,strings,linked lists)</p>
-          </div>
-
-           <div class="skill-card">
-            <h3 class="skill-title">Git & GitHub</h3>
-            <p skill-description>Manage Code Versions,Track Changes,Organize Projects</p>
+            <p class="skill-description">Develop Web Components</p>
           </div>
 
           <div class="skill-card">
-            <h3 class="skill-title">Artificial Intelligence & Machine learning</h3>
-            <p skill-description>Conversational AI Familiarity</p>
+            <h3 class="skill-title">DSA</h3>
+            <p class="skill-description">Work with Data Structures (loops, arrays, strings, linked lists)</p>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-title">Git & GitHub</h3>
+            <p class="skill-description">Manage Code Versions, Track Changes, Organize Projects</p>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-title">AI & ML</h3>
+            <p class="skill-description">Conversational AI Familiarity</p>
           </div>
           
+          <div class="skill-card">
+            <h3 class="skill-title">Presentation</h3>
+            <p class="skill-description">Clear, engaging, confident, and organized</p>
+          </div>
 
         </div>
    

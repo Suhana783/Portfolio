@@ -3,26 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Links</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+   
+    #heading {
+        text-align: left;
+        padding-top: 4rem;
+        padding-bottom: 0.5rem;
+    }
+
+    #heading h1 {
+        font-size: 2.7rem;
+        margin-left: 15rem; 
+        display: inline-block;
+        border-bottom: 3px solid #191a1b; 
+        padding-bottom: 5px;
+    }
+    
+    #para {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #555;
+        margin-left: 15.3rem; 
+        display: block; 
+        text-align: left;
+        margin-top: 1rem;
+        margin-bottom: 2rem; 
+    }
+
+    .centered-content {
+        margin: 0 auto; 
+        max-width: 1200px;
+        text-align: center;
+    }
+
+    .connect {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .connect-btn {
+        display: inline-block;
+        text-decoration: none; 
+        color: white;
+        padding: 10px 20px;
+        margin: 0 10px; 
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background-color 0.3s, opacity 0.3s;
+    }
+
+    .github-btn {
+        background-color: #333; 
+    }
+    .linkedin-btn {
+        background-color: #0077B5; 
+    }
+    .email-btn {
+        background-color: #777;
+    }
+    /* .connect-btn:hover {
+        opacity: 0.14;
+    } */
+</style>
+
 </head>
 <body>
     <header>
- 
-  <nav class="navbar">
-    <a href="home.html" class="logo">Suhana Chauhan</a>
+    <nav class="navbar">
+        <a href="home.html" class="logo">Suhana Chauhan</a>
 
-    <div class="nav-links">
-    <a href="home.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="skills.html">Skills</a>
-    <a href="education.html">Education</a>
-    <a href="projects.html">Projects</a>
-    <a href="links.html" class="active-link">Links</a>
+        <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="links.html" class="active-link">Links</a>
+        </div>
+    </nav>
+    </header>
 
+        <div id="heading">
+            <h1>Connect With Me</h1>
+        </div>
+        
+        <p id="para">Find me on these platforms:</p>
+    
+    <div class="centered-content">
+        <div class="connect">
+            <a href="https://github.com/Suhana783" target="_blank" class="connect-btn github-btn">GitHub</a>
+            <a href="https://www.linkedin.com/in/suhana123/" target="_blank" class="connect-btn linkedin-btn">LinkedIn</a>
+            <a href="mailto:suhanachauhan133@gmail.com?subject=Portfolio%20Inquiry" class="connect-btn email-btn">Email Me</a>
+        </div>
     </div>
-  </nav>
-
-</header>
-</body>
+    </body>
+  
 </html>

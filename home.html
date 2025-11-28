@@ -91,7 +91,7 @@
     <header>
  
   <nav class="navbar">
-    <a href="home.html" class="logo">Suhana Chauhan</a>
+    <a href="" class="logo">Suhana Chauhan</a>
 
     <div class="nav-links">
     <a href="home.html" class="active-link">Home</a>
@@ -106,21 +106,53 @@
 
 </header>
 
-<main class="home-hero-section">
+<div id="page-content" class="main-content">
+    <main class="home-hero-section">
+        <div class="hero-text-content">
+            <h1 class="main-name">Suhana Chauhan</h1>
+            <p class="title-passion">Passionate Frontend Developer</p>
+            <p class="description">Focused on building modern, responsive web applications with clean code. 
+              Driven to solve problems with creativity and efficiency.</p>
+            <a href="about.html" class="cta-button">Learn More About Me</a>
+        </div>
+        <div class="hero-image-placeholder">
+            <img src="photo.jpeg" alt="Suhana Chauhan Profile Photo">
+        </div>
+    </main>
+</div>
 
-  <div class="hero-text-content">
-    <h1 class="main-name">Suhana Chauhan</h1>
-    <p class="title-passion">Passionate Frontend Developer</p>
-    <p class="description">Focused on building modern, responsive web applications with clean code. 
-      Driven to solve problems with creativity and efficiency.</p>
-    <a href="about.html" class="cta-button">Learn More About Me</a>
-  </div>
+<!-- Add this script to the end of each HTML file before closing </body> tag -->
+<script>
+// Entrance Animation on Load
+window.addEventListener('load', function() {
+    const pageContent = document.getElementById('page-content');
+    if (pageContent) {
+        pageContent.classList.add('animate-in');
+    }
+});
 
-  <div class="hero-image-placeholder">
-    <img  src="photo.jpeg" alt="Suhana Chauhan Profile Photo">
-
-  </div>
-</main>
-
+// Exit Animation on Click
+document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    
+    if (link && !link.hasAttribute('target') && !link.href.startsWith('mailto:')) {
+        const isInternalLink = link.href.includes(window.location.hostname) || link.href.startsWith('./') || link.href.includes('.html');
+        
+        if (isInternalLink) {
+            e.preventDefault();
+            
+            const pageContent = document.getElementById('page-content');
+            if (pageContent) {
+                pageContent.classList.remove('animate-in');
+                pageContent.classList.add('animate-out');
+                
+                setTimeout(function() {
+                    window.location.href = link.href;
+                }, 600);
+            }
+        }
+    }
+});
+</script>
 </body>
 </html>

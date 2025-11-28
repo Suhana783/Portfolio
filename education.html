@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
-    <link rel="stylesheet" href="style.css">
-
+    
     <style>
+    body{
+     font-family: Arial, sans-serif;
+     background-color: rgb(206, 199, 199);
+     color: black;
+    }
+    .navbar {
+     background-color: #191a1b;
+     display: flex;
+     justify-content: space-between;
+     align-items:center;
+     padding:1.7rem;
+     position: sticky;
+     top: 0;
+    }
+    .navbar .logo {
+     color:white;
+     text-decoration: none;
+     font-size: 1.8rem;
+     font-weight: bold;
+     margin-left:20px;
+    }
+    .nav-links {
+     display:flex;
+     gap:30px;
+     margin-left:20px;
+    }
+    .navbar a {
+     color:white;
+     text-decoration: none;
+     font-size: 1.5rem;
+    }
+    .navbar .active-link {
+        margin-right: 7px; 
+        display: inline-block; 
+        padding: 0.1rem 0.3rem;
+        background-color: #EFE1D1;
+        color:rgb(98, 43, 4);
+        border-radius: 3px;
+    }
 
+    /* EDUCATION PAGE STYLES */
       #heading {
         text-align: left;
         padding-top: 4rem;
@@ -34,7 +73,7 @@
       
       .text {
         line-height: 1.5;
-        text-align: justify;
+        /* Removed text-align: justify to avoid overly stretched lines in titles */
         max-width: 1000px;
         margin: 0 auto;
       }
@@ -52,17 +91,13 @@
         color:#6b5744;
       }
 
-
-
     </style>
 </head>
 
 <body>
     <header>
- 
   <nav class="navbar">
     <a href="home.html" class="logo">Suhana Chauhan</a>
-
     <div class="nav-links">
     <a href="home.html">Home</a>
     <a href="about.html">About</a>
@@ -70,10 +105,8 @@
     <a href="education.html" class="active-link">Education</a>
     <a href="projects.html">Projects</a>
     <a href="links.html">Links</a>
-
     </div>
   </nav>
-
 </header>
 
     <div id="heading">
@@ -85,7 +118,7 @@
       <h3 id="university" class="text">Eternal University</h3>
       <h4 id="year" class="text">2024 – 2027 (Expected)</h4>
       <p id="p" class="text">Currently in 2nd Year, focusing on front-end development, programming, web development, database management, software projects, 
-         and research in emerging computer applications.</p>
+        and research in emerging computer applications.</p>
     </div>
 </body>
 </html>
